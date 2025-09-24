@@ -20,8 +20,7 @@ function agregarAmigo() {
        // insertamos una alerta nueva
        alert(`Amigo añadido`);
 
-    }  else {
-         alert('Por favor inserte un nombre válido'); 
+    }  
 }       
         //correccion de la funcion, creo que tenia elementos de mas
 // no estaba bien escrito. al parecer se me pasó
