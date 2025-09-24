@@ -18,7 +18,7 @@ function agregarAmigo() {
        actualizarLista();
        input.value = '';
        // insertamos una alerta nueva
-       alert(`Amigo agregado: ${nombre}`);
+       alert(`Amigo añadido`);
     }   
 }       
         //correccion de la funcion, creo que tenia elementos de mas
