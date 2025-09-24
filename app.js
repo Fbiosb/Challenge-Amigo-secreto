@@ -18,7 +18,7 @@ function agregarAmigo() {
        actualizarLista();
        input.value = '';
        // insertamos una alerta nueva
-       alert(`Amigo añadido`);
+       mostrarNotificacion(`Amigo añadido`);
 
     }  
 }       
