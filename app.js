@@ -17,6 +17,8 @@ function agregarAmigo() {
        amigos.push(nombre);
        actualizarLista();
        input.value = '';
+       // insertamos una alerta nueva
+       alert(`Amigo agregado: ${nombre}`);
     }   
 }       
         //correccion de la funcion, creo que tenia elementos de mas
@@ -61,4 +63,3 @@ document.getElementById('amigo').addEventListener('keypress', function (event) {
 // no esta jalando nombres :(
     // vamos a correr de nuevo v. 2.0
         // corremos nuevamente
-        
