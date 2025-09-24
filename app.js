@@ -60,7 +60,7 @@ function mostrarNotificacion(mensaje) {
     setTimeout(() => {
         notificacion.textContent = '';
         notificacion.style.display = 'none';
-    }, 3000); // El mensaje desaparece después de 3 segundos
+    }, 0750); // El mensaje desaparece después de .75 segundos
 }
 
 
