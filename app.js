@@ -32,3 +32,12 @@ function sortearAmigo() {
     alert(`El amigo sorteado es: ${amigoSorteado}`);
 }
 
+// funcion para el boton de enter
+
+document.getElementById('nombre-amigo').addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+        e.preventDefault(); // Evita que se envíe el formulario si está dentro de uno
+        document.getElementById('agregar-btn').click(); // Simula el clic en el botón
+    }      
+});
+
