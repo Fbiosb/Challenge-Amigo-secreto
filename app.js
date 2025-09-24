@@ -21,3 +21,14 @@ function agregarAmigo() {
 }
 
 //sortear nombres.. 
+
+function sortearAmigo() {
+    if (amigos.length === 0) {
+        alert('No hay amigos en la lista para sortear. Por favor inserte un nombre válido');
+        return;
+    }
+    const indice = Math.floor(Math.random() * amigos.length);
+    const amigoSorteado = amigos[indice];
+    alert(`El amigo sorteado es: ${amigoSorteado}`);
+}
+
