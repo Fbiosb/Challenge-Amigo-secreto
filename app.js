@@ -4,6 +4,8 @@
 // implementar funciones para agregar amigos, actualizar la lista, sortear amigos.
 // crear un readme "interesante?????"
 
+const { act } = require("react");
+
 let amigos = [];
 
 //problema del git solucionado. error en el master y main
@@ -11,7 +13,20 @@ let amigos = [];
 
 
 function agregarAmigo() {
-    const lista = document.getElementById('lista-amigos');
+    const input = document.getElementById('amigo');
+    const nombre = input.value.trim();
+    if (nombre === '') {
+       amigos. push(nombre);
+       actualizarLista();
+       input.value = '';
+    }   
+}       
+
+// no estaba bien escrito. al parecer se me pasó
+// ahora funcion de actualizar lista. esto lo puse encima del anterior
+
+function actualizarLista() {
+    const lista = document.getElementById('listaamigos');
     lista.innerHTML = '';
     amigos.forEach((amigo) => {
         const li = document.createElement('li');
@@ -19,6 +34,9 @@ function agregarAmigo() {
         lista.appendChild(li);
     });
 }
+    // ahora si creo que esta solucionado.... vamos a probar
+
+
 
 //sortear nombres.. 
 
@@ -41,3 +59,5 @@ document.getElementById('nombre-amigo').addEventListener('keypress', function (e
     }      
 });
 
+// no esta jalando nombres :(
+    // vamos a correr de nuevo v. 2.0
