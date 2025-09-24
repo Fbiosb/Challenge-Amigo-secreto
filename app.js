@@ -63,3 +63,6 @@ document.getElementById('amigo').addEventListener('keypress', function (event) {
 // no esta jalando nombres :(
     // vamos a correr de nuevo v. 2.0
         // corremos nuevamente
+        // intento algo nuevo para que funcione el alert al añadir nuevo nombre
+
+document.getElementById('btn-agregar').addEventListener('click', agregarAmigo);
