@@ -52,6 +52,17 @@ function sortearAmigo() {
     resultado.innerHTML = `<li>El amigo sorteado es: <strong>${amigoSorteado}</strong></li>`;
 }
 
+function mostrarNotificacion(mensaje) {
+    const notificacion = document.getElementById('notificacion');
+    notificacion.textContent = mensaje;
+    notificacion.style.display = 'block';
+
+    setTimeout(() => {
+        notificacion.textContent = '';
+        notificacion.style.display = 'none';
+    }, 3000); // El mensaje desaparece después de 3 segundos
+}
+
 
 // funcion para el boton de enter
 document.getElementById('amigo').addEventListener('keypress', function (event) {
