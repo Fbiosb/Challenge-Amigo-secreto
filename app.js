@@ -19,14 +19,16 @@ function agregarAmigo() {
        input.value = '';
        // insertamos una alerta nueva
        alert(`Amigo añadido`);
-    }   
+
+    }  else {
+         alert('Por favor inserte un nombre válido'); 
 }       
         //correccion de la funcion, creo que tenia elementos de mas
 // no estaba bien escrito. al parecer se me pasó
 // ahora funcion de actualizar lista. esto lo puse encima del anterior
 
 function actualizarLista() {
-    const lista = document.getElementById('listaamigos');
+    const lista = document.getElementById('listaAmigos');
     lista.innerHTML = '';
     amigos.forEach((amigo) => {
         const li = document.createElement('li');
@@ -64,5 +66,3 @@ document.getElementById('amigo').addEventListener('keypress', function (event) {
     // vamos a correr de nuevo v. 2.0
         // corremos nuevamente
         // intento algo nuevo para que funcione el alert al añadir nuevo nombre
-
-document.getElementById('btn-agregar').addEventListener('click', agregarAmigo);
